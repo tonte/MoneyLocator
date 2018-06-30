@@ -9,11 +9,11 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    @IBOutlet weak var mainLabel: UILabel!
+//    @IBOutlet weak var mainLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainLabel.text = "Hello"
+//        mainLabel.text = "Hello"
         // Do any additional setup after loading the view, typically from a nib.
     }
 

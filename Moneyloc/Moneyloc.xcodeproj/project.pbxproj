@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBB20E795BA00C672FC /* LoginViewController.swift */; };
+		2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBD20E79A7000C672FC /* NewViewController.swift */; };
+		2F55BBC020E7A39E00C672FC /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */; };
 		2FD5CF8C20DE50C700A01C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8B20DE50C700A01C8E /* AppDelegate.swift */; };
 		2FD5CF8E20DE50C700A01C8E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8D20DE50C700A01C8E /* FirstViewController.swift */; };
 		2FD5CF9020DE50C700A01C8E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8F20DE50C700A01C8E /* SecondViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F55BBBB20E795BA00C672FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F55BBBD20E79A7000C672FC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
 		2FD5CF8820DE50C700A01C8E /* Moneyloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moneyloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD5CF8B20DE50C700A01C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD5CF8D20DE50C700A01C8E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				2FD5CF9420DE50C700A01C8E /* Assets.xcassets */,
 				2FD5CF9620DE50C700A01C8E /* LaunchScreen.storyboard */,
 				2FD5CF9920DE50C700A01C8E /* Info.plist */,
+				2F55BBBB20E795BA00C672FC /* LoginViewController.swift */,
+				2F55BBBD20E79A7000C672FC /* NewViewController.swift */,
+				2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */,
 			);
 			path = Moneyloc;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */,
 				2FD5CF9020DE50C700A01C8E /* SecondViewController.swift in Sources */,
+				2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */,
+				2F55BBC020E7A39E00C672FC /* utilFunctions.swift in Sources */,
 				2FD5CF8C20DE50C700A01C8E /* AppDelegate.swift in Sources */,
 				2FD5CF8E20DE50C700A01C8E /* FirstViewController.swift in Sources */,
 			);
