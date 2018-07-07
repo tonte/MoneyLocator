@@ -1,0 +1,11 @@
+
+
+pod 'Firebase/Core'
+
+target 'Moneyloc' do
+
+  use_frameworks!
+
+  # Pods for Moneyloc
+
+end
