@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 
 
@@ -37,13 +38,17 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonClicked(_ sender: Any) {
-       
-        if (emailField.text == "admin" && passwordField.text == "password"){
-           navigateToPage(from:self,storyboardName: "Main", id: "mainTabBarControllerID")
+
+        Auth.auth().signIn(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
+            if let user = user{
+                navigateToPage(from:self,storyboardName: "Main", id: "mainTabBarControllerID")
+            }
+            else{
+                self.errorLabel.text = "Incorrect credentials. Please try again"
+            }
         }
-        else{
-            errorLabel.text = "Incorrect credentials. Please try again"
-        }
+        
+        
         
     }
     

@@ -1,7 +1,7 @@
 
 
 pod 'Firebase/Core'
-
+pod 'Firebase/Auth'
 target 'Moneyloc' do
 
   use_frameworks!
