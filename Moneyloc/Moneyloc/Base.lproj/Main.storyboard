@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RGj-Hy-U01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,13 +21,43 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="434" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-ZQ-Yuo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YnO-Io-OcQ">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="434"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YnO-Io-OcQ" id="YeS-DY-NHE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="433.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="yaf-e6-3Ob"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="VTQ-Pd-3Mk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qgF-ZQ-Yuo" secondAttribute="trailing" id="XtT-Kx-Qsc"/>
+                            <constraint firstItem="qgF-ZQ-Yuo" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="aCW-dB-9kf"/>
+                            <constraint firstItem="qgF-ZQ-Yuo" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="e5F-mS-8d7"/>
+                            <constraint firstAttribute="bottom" secondItem="qgF-ZQ-Yuo" secondAttribute="bottom" id="knq-c9-TMD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="vendorsTableView" destination="qgF-ZQ-Yuo" id="8wZ-oD-Jmt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1926" y="-609"/>
+            <point key="canvasLocation" x="-1909" y="-948"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ESh-z5-Whf">
@@ -295,7 +325,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3695" y="72"/>
+            <point key="canvasLocation" x="-3695" y="63"/>
         </scene>
         <!--Login-->
         <scene sceneID="nrH-bW-UNA">
@@ -475,4 +505,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uge-rt-UTR"/>
+    </inferredMetricsTieBreakers>
 </document>

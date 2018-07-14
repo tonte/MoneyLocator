@@ -10,6 +10,10 @@
 		2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBB20E795BA00C672FC /* LoginViewController.swift */; };
 		2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBD20E79A7000C672FC /* NewViewController.swift */; };
 		2F55BBC020E7A39E00C672FC /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */; };
+		2F91F6E520F9FB0200F19A58 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91F6E420F9FB0200F19A58 /* SampleTableViewController.swift */; };
+		2F91F6E720FA164C00F19A58 /* customTableViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */; };
+		2F91F6E920FA17EE00F19A58 /* vendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */; };
+		2F91F6EB20FA1A4600F19A58 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91F6EA20FA1A4600F19A58 /* Vendor.swift */; };
 		2FD5CF8C20DE50C700A01C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8B20DE50C700A01C8E /* AppDelegate.swift */; };
 		2FD5CF8E20DE50C700A01C8E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8D20DE50C700A01C8E /* FirstViewController.swift */; };
 		2FD5CF9020DE50C700A01C8E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5CF8F20DE50C700A01C8E /* SecondViewController.swift */; };
@@ -25,6 +29,10 @@
 		2F55BBBB20E795BA00C672FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F55BBBD20E79A7000C672FC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
+		2F91F6E420F9FB0200F19A58 /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTableViewCells.xib; sourceTree = "<group>"; };
+		2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vendorTableViewCell.swift; sourceTree = "<group>"; };
+		2F91F6EA20FA1A4600F19A58 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
 		2FD5CF8820DE50C700A01C8E /* Moneyloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moneyloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD5CF8B20DE50C700A01C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD5CF8D20DE50C700A01C8E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 				2F55BBBD20E79A7000C672FC /* NewViewController.swift */,
 				2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */,
 				2FE9737B20F0D3CA007AE079 /* RegisterViewController.swift */,
+				2F91F6E420F9FB0200F19A58 /* SampleTableViewController.swift */,
+				2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */,
+				2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */,
+				2F91F6EA20FA1A4600F19A58 /* Vendor.swift */,
 			);
 			path = Moneyloc;
 			sourceTree = "<group>";
@@ -170,6 +182,7 @@
 			files = (
 				2FD5CF9820DE50C700A01C8E /* LaunchScreen.storyboard in Resources */,
 				2FE9737E20F0D5EE007AE079 /* GoogleService-Info.plist in Resources */,
+				2F91F6E720FA164C00F19A58 /* customTableViewCells.xib in Resources */,
 				2FD5CF9520DE50C700A01C8E /* Assets.xcassets in Resources */,
 				2FD5CF9320DE50C700A01C8E /* Main.storyboard in Resources */,
 			);
@@ -243,8 +256,11 @@
 				2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */,
 				2FD5CF9020DE50C700A01C8E /* SecondViewController.swift in Sources */,
 				2FE9737C20F0D3CA007AE079 /* RegisterViewController.swift in Sources */,
+				2F91F6E520F9FB0200F19A58 /* SampleTableViewController.swift in Sources */,
 				2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */,
+				2F91F6E920FA17EE00F19A58 /* vendorTableViewCell.swift in Sources */,
 				2F55BBC020E7A39E00C672FC /* utilFunctions.swift in Sources */,
+				2F91F6EB20FA1A4600F19A58 /* Vendor.swift in Sources */,
 				2FD5CF8C20DE50C700A01C8E /* AppDelegate.swift in Sources */,
 				2FD5CF8E20DE50C700A01C8E /* FirstViewController.swift in Sources */,
 			);
