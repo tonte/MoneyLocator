@@ -10,6 +10,10 @@ import UIKit
 import FirebaseStorage
 class CreateVendorViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -32,6 +36,7 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
     var uploadUrl = ""
     
     
+    
     @IBOutlet weak var vendorName: UITextField!
     
     @IBOutlet weak var vendorDescription: UITextField!
@@ -40,6 +45,8 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
     
     @IBOutlet weak var vendorLocation: UITextField!
     @IBOutlet weak var selectImageButton: UIButton!
+    
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     @IBAction func AddNewButton(_ sender: Any) {

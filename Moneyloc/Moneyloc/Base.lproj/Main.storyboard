@@ -760,6 +760,7 @@
                     <tabBarItem key="tabBarItem" title="Upload Vendor" id="niK-dV-Ert"/>
                     <connections>
                         <outlet property="selectImageButton" destination="2sC-eI-pb4" id="aps-RN-h8t"/>
+                        <outlet property="errorLabel" destination="8gG-c2-naz" id="ygi-J2-dLj"/>
                         <outlet property="vendorDescription" destination="jII-Yw-5Mt" id="bfI-fn-ilt"/>
                         <outlet property="vendorLocation" destination="xJe-Yi-oXC" id="RO1-Ug-Ksf"/>
                         <outlet property="vendorName" destination="P9K-9h-kEa" id="OYt-YK-Jov"/>
