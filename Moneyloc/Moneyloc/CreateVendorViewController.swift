@@ -20,6 +20,8 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
     
     
@@ -28,6 +30,7 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
      var selectedImage:UIImage?
     var uploadStatus = false
     var uploadUrl = ""
+    
     
     @IBOutlet weak var vendorName: UITextField!
     
@@ -40,6 +43,25 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
     
     
     @IBAction func AddNewButton(_ sender: Any) {
+        
+        if vendorName.text?.isEmpty == true || vendorLocation.text?.isEmpty == true || vendorProvider.text?.isEmpty == true || vendorDescription.text?.isEmpty == true {
+            
+            errorLabel.text = "All the fields are required"
+        }
+        
+//        else {
+//            let key = ref?.childByAutoId().key
+//            
+//            let vendorList = ["VendorId":key,
+//                               "vendorname": vendorName.text! as String,
+//                               "vendorlocation": vendorLocation.text! as String,
+//                               "vendorprovider": vendorProvider.text! as String,
+//                               "vendordescription":vendorDescription.text! as String ]
+//            
+//            
+//            ref?.child(key!).setValue(vendorList)
+//            
+//        }
     }
     
     

@@ -136,7 +136,6 @@
 				2FD5CF8520DE50C700A01C8E /* Frameworks */,
 				2FD5CF8620DE50C700A01C8E /* Resources */,
 				A535CE19D9036C8E5A4AA778 /* [CP] Embed Pods Frameworks */,
-				CF50E00030A2CFC04565A491 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,21 +222,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moneyloc/Pods-Moneyloc-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF50E00030A2CFC04565A491 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moneyloc/Pods-Moneyloc-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED1E5BB5357DF0CC536AAD42 /* [CP] Check Pods Manifest.lock */ = {
