@@ -114,7 +114,7 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
             let spaceRef = vendorsRef.child(fileName)
             
             // Data in memory
-            let data = UIImageJPEGRepresentation(image, 40)
+            let data = UIImageJPEGRepresentation(image, 0.5)
             
             
             let metadata = StorageMetadata()
