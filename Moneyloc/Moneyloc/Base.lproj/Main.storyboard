@@ -746,12 +746,20 @@
                                     <action selector="AddNewButton:" destination="MEs-V7-0uT" eventType="touchUpInside" id="oar-GN-e4w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-c2-naz">
+                                <rect key="frame" x="32" y="538" width="290" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="8gG-c2-naz" id="ygi-J2-dLj"/>
                         <outlet property="vendorDescription" destination="jII-Yw-5Mt" id="bfI-fn-ilt"/>
-                        <outlet property="vendorLocation" destination="xJe-Yi-oXC" id="jET-jD-v7t"/>
+                        <outlet property="vendorLocation" destination="xJe-Yi-oXC" id="RO1-Ug-Ksf"/>
                         <outlet property="vendorName" destination="P9K-9h-kEa" id="OYt-YK-Jov"/>
                         <outlet property="vendorProvider" destination="l9f-uK-q6I" id="iZQ-bg-0UC"/>
                     </connections>

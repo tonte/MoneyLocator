@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class CreateVendorViewController: UIViewController {
+    
+    var ref: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,10 @@ class CreateVendorViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
+    
     
     
     
@@ -31,9 +38,31 @@ class CreateVendorViewController: UIViewController {
     
     @IBOutlet weak var vendorProvider: UITextField!
     
-    @IBOutlet weak var vendorLocation: Create!
+    @IBOutlet weak var vendorLocation: UITextField!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
     
     @IBAction func AddNewButton(_ sender: Any) {
+        
+        if vendorName.text?.isEmpty == true || vendorLocation.text?.isEmpty == true || vendorProvider.text?.isEmpty == true || vendorDescription.text?.isEmpty == true {
+            
+            errorLabel.text = "All the fields are required"
+        }
+        
+//        else {
+//            let key = ref?.childByAutoId().key
+//            
+//            let vendorList = ["VendorId":key,
+//                               "vendorname": vendorName.text! as String,
+//                               "vendorlocation": vendorLocation.text! as String,
+//                               "vendorprovider": vendorProvider.text! as String,
+//                               "vendordescription":vendorDescription.text! as String ]
+//            
+//            
+//            ref?.child(key!).setValue(vendorList)
+//            
+//        }
     }
     
     
