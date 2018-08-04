@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1909" y="-948"/>
+            <point key="canvasLocation" x="-2110" y="-918"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ESh-z5-Whf">
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnd-bY-kJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-47" y="-1055"/>
+            <point key="canvasLocation" x="-2111" y="-245"/>
         </scene>
         <!--Nearby-->
         <scene sceneID="wg7-f3-ORb">
@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjY-Lt-zfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3695" y="-609"/>
+            <point key="canvasLocation" x="-4858" y="-609"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="eCv-pW-Idv">
@@ -325,7 +325,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3695" y="63"/>
+            <point key="canvasLocation" x="-3222" y="-609"/>
         </scene>
         <!--Login-->
         <scene sceneID="nrH-bW-UNA">
@@ -498,7 +498,148 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCU-r0-P6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2673" y="-609"/>
+            <point key="canvasLocation" x="-3994" y="-609"/>
+        </scene>
+        <!--Vendor Details View Controller-->
+        <scene sceneID="Js6-UU-CIc">
+            <objects>
+                <viewController storyboardIdentifier="vendorDetails" id="1iG-Dy-lYl" customClass="VendorDetailsViewController" customModule="Moneyloc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SWS-rl-DYq"/>
+                        <viewControllerLayoutGuide type="bottom" id="hDH-4L-1wE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ard-K0-eTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E41-sK-lQw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="O8L-jy-9TN"/>
+                                    <constraint firstAttribute="height" constant="253" id="xsw-zj-gQr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBB-L4-Sgh">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.6022225618" green="0.58810216189999998" blue="0.44374507670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Yb-J1-sod"/>
+                                </constraints>
+                                <state key="normal" title="TAKE ME THERE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonClicked:" destination="eBO-pc-9on" eventType="touchUpInside" id="jsA-LM-v5f"/>
+                                    <action selector="vendorDirectionsButtonClicked:" destination="1iG-Dy-lYl" eventType="touchUpInside" id="d6u-0R-VFm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mON-oQ-yed">
+                                <rect key="frame" x="102.5" y="273" width="170" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tonte Enterprise">
+                                        <attributes>
+                                            <color key="NSColor" white="0.20708550347222221" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="23" name="GillSans-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk1-0K-f7O">
+                                <rect key="frame" x="9" y="332" width="357" height="19.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="description">
+                                        <attributes>
+                                            <color key="NSColor" white="0.20708550349999999" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2u-ev-TOs">
+                                <rect key="frame" x="7.5" y="361.5" width="359.5" height="19.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="operating times">
+                                        <attributes>
+                                            <color key="NSColor" white="0.20708550349999999" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGo-RT-WpS">
+                                <rect key="frame" x="9" y="391" width="359" height="19.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="providers">
+                                        <attributes>
+                                            <color key="NSColor" white="0.20708550349999999" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVZ-nX-8BI">
+                                <rect key="frame" x="9" y="420.5" width="359" height="19.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="location">
+                                        <attributes>
+                                            <color key="NSColor" white="0.20708550349999999" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hDH-4L-1wE" firstAttribute="top" secondItem="aBB-L4-Sgh" secondAttribute="bottom" id="0Hq-nL-KXO"/>
+                            <constraint firstItem="E41-sK-lQw" firstAttribute="top" secondItem="SWS-rl-DYq" secondAttribute="bottom" constant="-20" id="6Nl-NG-oKE"/>
+                            <constraint firstAttribute="trailing" secondItem="v2u-ev-TOs" secondAttribute="trailing" constant="7.5" id="Cyq-Pv-IMO"/>
+                            <constraint firstItem="v2u-ev-TOs" firstAttribute="top" secondItem="Mk1-0K-f7O" secondAttribute="bottom" constant="10" id="Gje-Ic-3Su"/>
+                            <constraint firstItem="ZGo-RT-WpS" firstAttribute="top" secondItem="v2u-ev-TOs" secondAttribute="bottom" constant="10" id="J6y-eN-hXv"/>
+                            <constraint firstItem="nVZ-nX-8BI" firstAttribute="top" secondItem="ZGo-RT-WpS" secondAttribute="bottom" constant="10" id="SHa-2y-MYq"/>
+                            <constraint firstAttribute="trailing" secondItem="Mk1-0K-f7O" secondAttribute="trailing" constant="9" id="Tp0-XT-2rW"/>
+                            <constraint firstAttribute="trailing" secondItem="aBB-L4-Sgh" secondAttribute="trailing" id="VII-ql-dML"/>
+                            <constraint firstItem="mON-oQ-yed" firstAttribute="centerX" secondItem="ard-K0-eTO" secondAttribute="centerX" id="aKW-wr-BXh"/>
+                            <constraint firstItem="Mk1-0K-f7O" firstAttribute="top" secondItem="mON-oQ-yed" secondAttribute="bottom" constant="32" id="bvl-Bk-lyI"/>
+                            <constraint firstItem="E41-sK-lQw" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" id="cpR-DL-XI6"/>
+                            <constraint firstAttribute="trailing" secondItem="E41-sK-lQw" secondAttribute="trailing" id="f6v-kL-dRK"/>
+                            <constraint firstItem="mON-oQ-yed" firstAttribute="top" secondItem="E41-sK-lQw" secondAttribute="bottom" constant="20" id="jZB-9O-WeU"/>
+                            <constraint firstItem="aBB-L4-Sgh" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" id="jfV-kX-7Ua"/>
+                            <constraint firstItem="nVZ-nX-8BI" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" constant="9" id="kyh-gz-5ZU"/>
+                            <constraint firstAttribute="trailing" secondItem="nVZ-nX-8BI" secondAttribute="trailing" constant="7" id="rPl-NV-COk"/>
+                            <constraint firstItem="ZGo-RT-WpS" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" constant="9" id="vgi-Eh-TFc"/>
+                            <constraint firstItem="v2u-ev-TOs" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" constant="7.5" id="x8z-2n-KA9"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGo-RT-WpS" secondAttribute="trailing" constant="7" id="xbU-oy-Euq"/>
+                            <constraint firstItem="Mk1-0K-f7O" firstAttribute="leading" secondItem="ard-K0-eTO" secondAttribute="leading" constant="9" id="ydt-rR-kXv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vendorDescriptionLabel" destination="Mk1-0K-f7O" id="Q3Z-OY-cWV"/>
+                        <outlet property="vendorImageView" destination="E41-sK-lQw" id="61k-ap-nZI"/>
+                        <outlet property="vendorLocationLabel" destination="nVZ-nX-8BI" id="oXW-Mj-V4I"/>
+                        <outlet property="vendorName" destination="mON-oQ-yed" id="XKE-xL-Qla"/>
+                        <outlet property="vendorOperatingTimesLabel" destination="v2u-ev-TOs" id="NYn-hk-c8o"/>
+                        <outlet property="vendorProvidersLabel" destination="ZGo-RT-WpS" id="B0e-tI-gHf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pi7-hI-Uwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1279" y="-919"/>
         </scene>
     </scenes>
     <resources>

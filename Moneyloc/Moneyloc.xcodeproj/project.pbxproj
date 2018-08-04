@@ -10,6 +10,7 @@
 		2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBB20E795BA00C672FC /* LoginViewController.swift */; };
 		2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBD20E79A7000C672FC /* NewViewController.swift */; };
 		2F55BBC020E7A39E00C672FC /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */; };
+		2F708BA7210C8DED00AEF367 /* VendorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F708BA6210C8DED00AEF367 /* VendorDetailsViewController.swift */; };
 		2F91F6E520F9FB0200F19A58 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91F6E420F9FB0200F19A58 /* SampleTableViewController.swift */; };
 		2F91F6E720FA164C00F19A58 /* customTableViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */; };
 		2F91F6E920FA17EE00F19A58 /* vendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */; };
@@ -29,6 +30,7 @@
 		2F55BBBB20E795BA00C672FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F55BBBD20E79A7000C672FC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		2F55BBBF20E7A39E00C672FC /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
+		2F708BA6210C8DED00AEF367 /* VendorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailsViewController.swift; sourceTree = "<group>"; };
 		2F91F6E420F9FB0200F19A58 /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTableViewCells.xib; sourceTree = "<group>"; };
 		2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vendorTableViewCell.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				2F91F6E620FA164C00F19A58 /* customTableViewCells.xib */,
 				2F91F6E820FA17EE00F19A58 /* vendorTableViewCell.swift */,
 				2F91F6EA20FA1A4600F19A58 /* Vendor.swift */,
+				2F708BA6210C8DED00AEF367 /* VendorDetailsViewController.swift */,
 			);
 			path = Moneyloc;
 			sourceTree = "<group>";
@@ -198,14 +201,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Moneyloc/Pods-Moneyloc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +265,7 @@
 				2F55BBBC20E795BA00C672FC /* LoginViewController.swift in Sources */,
 				2FD5CF9020DE50C700A01C8E /* SecondViewController.swift in Sources */,
 				2FE9737C20F0D3CA007AE079 /* RegisterViewController.swift in Sources */,
+				2F708BA7210C8DED00AEF367 /* VendorDetailsViewController.swift in Sources */,
 				2F91F6E520F9FB0200F19A58 /* SampleTableViewController.swift in Sources */,
 				2F55BBBE20E79A7000C672FC /* NewViewController.swift in Sources */,
 				2F91F6E920FA17EE00F19A58 /* vendorTableViewCell.swift in Sources */,

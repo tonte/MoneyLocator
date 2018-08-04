@@ -37,6 +37,7 @@ class VendorTableViewCell: UITableViewCell {
             self.vendorStatus.text = "Closed"
             self.vendorStatus.textColor = UIColor.red
         }
+        downloadImageFromUrl(url: imageURL, imageView:self.imageView!)
        
     }
 

@@ -7,23 +7,35 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
-    
-    
-    let vendorList = [ Vendor.init(name: "By His Grace Ent", type: "Mobile Money", imageURL: "https://www.google.com.gh/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjxh4KLxJ7cAhXBkCwKHVIICvMQjRx6BAgBEAU&url=https%3A%2F%2Fstarrfmonline.com%2F2017%2F09%2F14%2Fsekondi-mobile-money-vendor-faints-over-ghc6k-scam%2F&psig=AOvVaw2EqLdhX2wnRHsYgi3ie03z&ust=1531655649276493", status: true, providers: ["MTN"]),Vendor.init(name: "By His Grace Ent 2", type: "Mobile Money", imageURL: "", status: true, providers: ["MTN"]),Vendor.init(name: "By His Grace Ent 3", type: "Mobile Money", imageURL: "", status: false, providers: ["MTN"])]
-    
-    
-    
-    
-    
-    let dataSource = ["Comfort","Ewurafua","Samuel","Ernest","Tonte"]
+    var ref: DatabaseReference!
+    var vendorList:[Vendor] = []
     @IBOutlet weak var vendorsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference().child("Vendors")
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let values = snapshot.children.allObjects as? [DataSnapshot]
+            
+            for value in values!{
+                let vendor = Vendor(responseObject:value.value as AnyObject)
+                self.vendorList.append(vendor)
+            }
+            self.vendorsTableView.reloadData()
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,12 +54,20 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let vendor = vendorList[index]
         var cellNib = Bundle.main.loadNibNamed("customTableViewCells", owner: nil, options: nil)
         let cell = cellNib![0] as? VendorTableViewCell
-       
-        
         cell?.setup(name: vendor.name, status: vendor.status, imageURL: vendor.imageURL, type: vendor.type)
         return cell!
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+//        navigateToPage(from:self,storyboardName: "Main", id: "vendorDetails")
+        let storyboard:UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let vendorDetailsViewController = (storyboard.instantiateViewController(withIdentifier: "vendorDetails") as? VendorDetailsViewController)!
+        vendorDetailsViewController.selectedVendor = vendorList[index]
+        
+        self.present(vendorDetailsViewController, animated: true, completion: nil)
+    }
     
     
     

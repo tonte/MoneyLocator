@@ -2,6 +2,9 @@
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod ‘AlamofireImage’
+
 target 'Moneyloc' do
 
   use_frameworks!

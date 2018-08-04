@@ -6,54 +6,35 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vendorTableViewCell" rowHeight="434" id="urg-iX-gPO" customClass="VendorTableViewCell" customModule="Moneyloc" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="654" height="434"/>
+            <rect key="frame" x="0.0" y="0.0" width="450" height="434"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="urg-iX-gPO" id="rMb-Fs-lcS">
-                <rect key="frame" x="0.0" y="0.0" width="654" height="434"/>
+                <rect key="frame" x="0.0" y="0.0" width="450" height="434"/>
                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-e8-5y1">
-                        <rect key="frame" x="0.0" y="0.0" width="654" height="227"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="341"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Mobile Money Vendor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUb-PE-z32">
-                        <rect key="frame" x="0.0" y="224" width="654" height="25.5"/>
+                        <rect key="frame" x="0.0" y="349" width="450" height="25.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCA-Nm-c28">
-                        <rect key="frame" x="306" y="286" width="42" height="21"/>
+                        <rect key="frame" x="204" y="411" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.019916416654311906" green="0.68553696065989844" blue="0.13905197415786213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-airtel" translatesAutoresizingMaskIntoConstraints="NO" id="1cn-tE-egW">
-                        <rect key="frame" x="417" y="320" width="40" height="41"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-tigo" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-4u-Rmi">
-                        <rect key="frame" x="416.5" y="320" width="41" height="41"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="U3a-4u-Rmi" secondAttribute="height" multiplier="1:1" id="bc7-lH-CBt"/>
-                        </constraints>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-mtn" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-SF-wGl">
-                        <rect key="frame" x="339" y="320" width="40" height="41"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-vodafone" translatesAutoresizingMaskIntoConstraints="NO" id="pUf-pj-nX2">
-                        <rect key="frame" x="417" y="319" width="40" height="42"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="pUf-pj-nX2" secondAttribute="height" multiplier="19:20" id="YjP-Ef-G2h"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb3-Tl-y4Q">
-                        <rect key="frame" x="608" y="413.5" width="35" height="20.5"/>
+                        <rect key="frame" x="404" y="413.5" width="35" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -61,22 +42,14 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="VCA-Nm-c28" firstAttribute="top" secondItem="uUb-PE-z32" secondAttribute="bottom" constant="36.5" id="6HG-oI-SRQ"/>
-                    <constraint firstAttribute="trailing" secondItem="pUf-pj-nX2" secondAttribute="trailing" constant="197" id="8da-eL-E3f"/>
-                    <constraint firstAttribute="bottom" secondItem="Jt0-SF-wGl" secondAttribute="bottom" constant="72.5" id="DfS-bJ-lzP"/>
                     <constraint firstAttribute="trailing" secondItem="KFP-e8-5y1" secondAttribute="trailing" id="HI7-Pd-DaC"/>
                     <constraint firstAttribute="bottom" secondItem="mb3-Tl-y4Q" secondAttribute="bottom" constant="-0.5" id="I82-lJ-Hpb"/>
-                    <constraint firstAttribute="bottom" secondItem="1cn-tE-egW" secondAttribute="bottom" constant="72.5" id="KCM-kO-XtP"/>
-                    <constraint firstItem="uUb-PE-z32" firstAttribute="top" secondItem="rMb-Fs-lcS" secondAttribute="top" constant="224" id="LD5-oO-ANo"/>
-                    <constraint firstAttribute="bottom" secondItem="pUf-pj-nX2" secondAttribute="bottom" constant="72.5" id="P25-Lh-Ccx"/>
-                    <constraint firstItem="U3a-4u-Rmi" firstAttribute="centerX" secondItem="1cn-tE-egW" secondAttribute="centerX" id="SgG-Gz-gKW"/>
-                    <constraint firstItem="VCA-Nm-c28" firstAttribute="top" secondItem="KFP-e8-5y1" secondAttribute="bottom" constant="59" id="Wrn-47-LxD"/>
+                    <constraint firstItem="uUb-PE-z32" firstAttribute="top" secondItem="rMb-Fs-lcS" secondAttribute="top" constant="349" id="LD5-oO-ANo"/>
+                    <constraint firstItem="VCA-Nm-c28" firstAttribute="top" secondItem="KFP-e8-5y1" secondAttribute="bottom" constant="70" id="Wrn-47-LxD"/>
                     <constraint firstAttribute="trailing" secondItem="mb3-Tl-y4Q" secondAttribute="trailing" constant="11" id="Xqi-iL-mLN"/>
                     <constraint firstItem="KFP-e8-5y1" firstAttribute="top" secondItem="rMb-Fs-lcS" secondAttribute="top" id="Zap-GO-gz8"/>
                     <constraint firstItem="KFP-e8-5y1" firstAttribute="leading" secondItem="rMb-Fs-lcS" secondAttribute="leading" id="deU-su-6Bf"/>
                     <constraint firstItem="VCA-Nm-c28" firstAttribute="centerX" secondItem="rMb-Fs-lcS" secondAttribute="centerX" id="eTV-Xj-cRi"/>
-                    <constraint firstAttribute="bottom" secondItem="U3a-4u-Rmi" secondAttribute="bottom" constant="72.5" id="fMe-1G-GMi"/>
-                    <constraint firstItem="pUf-pj-nX2" firstAttribute="centerX" secondItem="1cn-tE-egW" secondAttribute="centerX" id="kk7-3O-RzH"/>
-                    <constraint firstItem="pUf-pj-nX2" firstAttribute="leading" secondItem="Jt0-SF-wGl" secondAttribute="trailing" constant="38" id="wIb-6n-D3b"/>
                     <constraint firstItem="uUb-PE-z32" firstAttribute="leading" secondItem="rMb-Fs-lcS" secondAttribute="leading" id="wxx-d6-0Ya"/>
                     <constraint firstAttribute="trailing" secondItem="uUb-PE-z32" secondAttribute="trailing" id="zPd-5h-8qm"/>
                 </constraints>
@@ -87,13 +60,7 @@
                 <outlet property="vendorNameLabel" destination="uUb-PE-z32" id="e7a-ST-JRW"/>
                 <outlet property="vendorStatus" destination="VCA-Nm-c28" id="pje-sZ-qyx"/>
             </connections>
-            <point key="canvasLocation" x="-171" y="-10"/>
+            <point key="canvasLocation" x="-273" y="-10"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="icon-airtel" width="40" height="41"/>
-        <image name="icon-mtn" width="40" height="41"/>
-        <image name="icon-tigo" width="41" height="41"/>
-        <image name="icon-vodafone" width="40" height="40"/>
-    </resources>
 </document>

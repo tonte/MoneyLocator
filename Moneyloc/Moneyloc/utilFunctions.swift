@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AlamofireImage
 
 func navigateToPage(from:UIViewController,storyboardName:String,id:String) {
     
@@ -15,4 +16,9 @@ func navigateToPage(from:UIViewController,storyboardName:String,id:String) {
     
     let mainTabBarController:UIViewController = storyboard.instantiateViewController(withIdentifier: id)
     from.present(mainTabBarController, animated: true, completion: nil)
+}
+
+func downloadImageFromUrl(url:String, imageView:UIImageView){
+    let imageUrl = URL(string: url)!
+    imageView.af_setImage(withURL: imageUrl)
 }
