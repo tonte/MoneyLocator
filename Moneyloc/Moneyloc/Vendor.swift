@@ -20,13 +20,20 @@ class Vendor{
     var operatingTimes:String = ""
     var description:String = ""
     
+    var firebaseDictionary:[String:Any] = [:]
     
-    init(name:String,type:String,imageURL:String,status:Bool,providers:[String]) {
+    
+    
+    init(name:String,imageURL:String,location:String,description:String) {
         self.name = name
-        self.type = type
+          firebaseDictionary["name"] = name
         self.imageURL = imageURL
-        self.status = status
-        self.providers = providers
+         firebaseDictionary["imageURL"] = imageURL
+        self.location = location
+         firebaseDictionary["location"] = location
+        self.description = description
+         firebaseDictionary["description"] = description
+        
     }
     
     init(responseObject:AnyObject?) {

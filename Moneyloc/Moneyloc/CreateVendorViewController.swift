@@ -8,10 +8,11 @@
 
 import UIKit
 import FirebaseStorage
+import FirebaseDatabase
 class CreateVendorViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
 
-    
+    var ref:DatabaseReference?
     
 
     override func viewDidLoad() {
@@ -19,6 +20,9 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
         imagePicker.delegate = self
         
         // Do any additional setup after loading the view.
+        
+       ref = Database.database().reference().child("Vendors")
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,19 +60,46 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
             errorLabel.text = "All the fields are required"
         }
         
-//        else {
-//            let key = ref?.childByAutoId().key
-//            
-//            let vendorList = ["VendorId":key,
-//                               "vendorname": vendorName.text! as String,
-//                               "vendorlocation": vendorLocation.text! as String,
-//                               "vendorprovider": vendorProvider.text! as String,
-//                               "vendordescription":vendorDescription.text! as String ]
-//            
-//            
-//            ref?.child(key!).setValue(vendorList)
-//            
-//        }
+        else{
+            
+            if let image = selectedImage{
+                uploadImage(onSuccess: {
+                    
+                    
+                    
+//                    let key = self.ref?.childByAutoId().key
+                    
+                    let vendors = Vendor(name: self.vendorName.text!,imageURL:self.uploadUrl, location: self.vendorLocation.text!, description:self.vendorDescription.text! )
+//                    print(ref?.url)
+                    self.ref?.childByAutoId().setValue(vendors.firebaseDictionary){
+                        (error:Error?, ref:DatabaseReference) in
+                        if let error = error {
+                            print("Data could not be saved: \(error).")
+                        } else {
+                            let alert = UIAlertController(title: "Success", message: "Vendor created succesfully", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+                            {
+                                UIAlertAction in
+                                alert.dismiss(animated: true, completion: nil)
+                            })
+                            self.present(alert,animated: true, completion: nil)
+                        }
+                    }
+                    
+                    }, onError: nil)
+            }
+            else {
+                let alert = UIAlertController(title: "Error", message: "Select an image first", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+                {
+                    UIAlertAction in
+                    alert.dismiss(animated: true, completion: nil)
+                })
+                self.present(alert,animated: true, completion: nil)
+            }
+        }
+        
+        
     }
     
     
@@ -126,8 +157,10 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
         self.dismiss(animated: true, completion: { () -> Void in
                         self.selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
             self.selectImageButton.setTitle("Change selected image", for: .normal)
-            self.uploadImage(onSuccess: {print(self.uploadUrl)}, onError: {print(self.uploadStatus)})
+            
             })
+        
+    
                  
     }
     

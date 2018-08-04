@@ -19,6 +19,8 @@ func navigateToPage(from:UIViewController,storyboardName:String,id:String) {
 }
 
 func downloadImageFromUrl(url:String, imageView:UIImageView){
-    let imageUrl = URL(string: url)!
-    imageView.af_setImage(withURL: imageUrl)
+    if let imageUrl = URL(string: url){
+        imageView.af_setImage(withURL: imageUrl)
+    }
+    
 }
