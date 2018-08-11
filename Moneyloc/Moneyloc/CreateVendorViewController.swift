@@ -57,6 +57,7 @@ class CreateVendorViewController: UIViewController,UIImagePickerControllerDelega
         
         if vendorName.text?.isEmpty == true || vendorLocation.text?.isEmpty == true || vendorProvider.text?.isEmpty == true || vendorDescription.text?.isEmpty == true {
             
+            
             errorLabel.text = "All the fields are required"
         }
         
